@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="230dp"
+        android:background="@drawable/back"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/newgamebtn"
+            android:shadowColor="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:capitalize="characters"
+            android:padding="25dp"
+            android:text="@string/new_game"
+            android:textSize="20sp"
+            android:visibility="visible"
+            android:background="@drawable/back"
+
+            tools:visibility="visible" />
+
+        <Button
+            android:id="@+id/aboutbtn"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="15dp"
+            android:layout_weight="1"
+            android:background="@color/btnbackground"
+            android:capitalize="characters"
+            android:padding="25dp"
+            android:text="@string/about"
+            android:textCursorDrawable="@drawable/back"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="418dp"
+        android:layout_height="59dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@color/btnbackground"
+            android:text="@string/dice_game_android_application"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:autoSizeTextType="uniform" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
