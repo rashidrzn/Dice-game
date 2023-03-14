@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 class TargetActivity : AppCompatActivity() {
+    var targettt=0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_target)
@@ -15,8 +16,10 @@ class TargetActivity : AppCompatActivity() {
         var target: Button = findViewById(R.id.targetbtn)
         var targetText: TextView = findViewById(R.id.target)
 
+
         target.setOnClickListener {
             var targett = targetText.text.toString()
+            targettt=targett.toInt()
             if (targett.isNotBlank() && targett.toInt() > 0) {
                 var intnt =
                     Intent(this, NewGame::class.java).apply { putExtra("input", targett.toInt()) }
@@ -28,6 +31,11 @@ class TargetActivity : AppCompatActivity() {
                 toast.show()
             }
         }
+
+        if (savedInstanceState != null) {
+            var newTarget = savedInstanceState.getInt("target", 0)
+            targetText.setText("" + newTarget)
+        }
     }
     override fun onBackPressed() {
         // Navigate back to the initial screen of the application
@@ -35,4 +43,11 @@ class TargetActivity : AppCompatActivity() {
         startActivity(intent)
         finish()
     }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+        super.onSaveInstanceState(outState)
+        outState.putInt("target",targettt)
+    }
+
+
 }

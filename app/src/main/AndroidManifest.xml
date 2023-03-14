@@ -16,6 +16,7 @@
             android:exported="false" />
         <activity
             android:name=".NewGame"
+            android:configChanges="orientation|screenSize"
             android:exported="false" />
         <activity
             android:name=".aboutactivity"
