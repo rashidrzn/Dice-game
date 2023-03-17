@@ -8,7 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 class TargetActivity : AppCompatActivity() {
-    var targettt=0
+    var targettt = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_target)
@@ -17,13 +17,27 @@ class TargetActivity : AppCompatActivity() {
         var targetText: TextView = findViewById(R.id.target)
 
 
+        val userWin = intent.getIntExtra("userWin", 0)
+        val comWin = intent.getIntExtra("computerWin", 0)
+
+        if (savedInstanceState != null) {
+            var newTarget = savedInstanceState.getInt("target", 0)
+            targetText.setText("" + newTarget)
+        }
+
+
+
+
         target.setOnClickListener {
             var targett = targetText.text.toString()
-            targettt=targett.toInt()
+
+            targettt = targett.toInt()
             if (targett.isNotBlank() && targett.toInt() > 0) {
-                var intnt =
-                    Intent(this, NewGame::class.java).apply { putExtra("input", targett.toInt()) }
-                startActivity(intnt)
+                var int = Intent(this, NewGame::class.java)
+                int.putExtra("userWin", userWin)
+                int.putExtra("computerWin", comWin)
+                int.putExtra("input", targett.toInt())
+                startActivity(int)
             } else {
                 val message = "Please set a target in the above text field"
                 val duration = Toast.LENGTH_SHORT
@@ -32,11 +46,9 @@ class TargetActivity : AppCompatActivity() {
             }
         }
 
-        if (savedInstanceState != null) {
-            var newTarget = savedInstanceState.getInt("target", 0)
-            targetText.setText("" + newTarget)
-        }
+
     }
+
     override fun onBackPressed() {
         // Navigate back to the initial screen of the application
         val intent = Intent(this, MainActivity::class.java)
@@ -46,7 +58,7 @@ class TargetActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
-        outState.putInt("target",targettt)
+        outState.putInt("target", targettt)
     }
 
 

@@ -10,8 +10,8 @@
         android:id="@+id/L_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:padding="20dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/L_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,7 +26,7 @@
                 android:id="@+id/C_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 app:flow_horizontalBias="0.5"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/C_2"
@@ -37,36 +37,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/text_1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="User"
+                        android:textSize="25sp"
+                        app:layout_constraintBottom_toTopOf="@id/UWin"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                        <TextView
-                            android:id="@+id/text_1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="H :  "
-                            android:textSize="25sp"
-                            app:layout_constraintBottom_toTopOf="@id/UWin"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="1.0"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/UWin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="____"
+                        android:textSize="25sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_1" />
 
-                        <TextView
-                            android:id="@+id/UWin"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="____"
-                            android:textSize="25sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/text_1" />
 
-                    </LinearLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
 
@@ -86,34 +80,28 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/text_3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:text="Computer"
+                        android:textSize="25sp"
+                        app:layout_constraintBottom_toTopOf="@id/CWin"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent">
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-                        <TextView
-                            android:id="@+id/text_3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="/  C :  "
-                            android:textSize="25sp"
-                            app:layout_constraintBottom_toTopOf="@id/CWin"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/CWin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="____"
+                        android:textSize="25sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/text_3" />
 
-                        <TextView
-                            android:id="@+id/CWin"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="____"
-                            android:textSize="25sp"
-                            app:layout_constraintBottom_toBottomOf="parent"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/text_3" />
-                    </LinearLayout>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -232,7 +220,7 @@
                             android:id="@+id/text_9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="   Cmpter: "
+                            android:text="Computer: "
                             android:textSize="25sp"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/CScore"
@@ -257,6 +245,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
+
 
 
     </LinearLayout>
@@ -284,51 +273,51 @@
                     android:id="@+id/i_1"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_2"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
                 <ImageView
                     android:id="@+id/i_2"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_3"
                     app:layout_constraintStart_toEndOf="@+id/i_1"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
                 <ImageView
                     android:id="@+id/i_3"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_4"
                     app:layout_constraintStart_toEndOf="@+id/i_2"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
                 <ImageView
                     android:id="@+id/i_4"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_5"
                     app:layout_constraintStart_toEndOf="@+id/i_3"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
                 <ImageView
                     android:id="@+id/i_5"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/i_4"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -360,51 +349,51 @@
                     android:id="@+id/i_6"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_7"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
                 <ImageView
                     android:id="@+id/i_7"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_8"
                     app:layout_constraintStart_toEndOf="@+id/i_6"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
                 <ImageView
                     android:id="@+id/i_8"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_9"
                     app:layout_constraintStart_toEndOf="@+id/i_7"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
                 <ImageView
                     android:id="@+id/i_9"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_10"
                     app:layout_constraintStart_toEndOf="@+id/i_8"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
                 <ImageView
                     android:id="@+id/i_10"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
-                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/i_9"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/die_face_1"/>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -417,10 +406,10 @@
         android:id="@+id/L_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/L_4"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/L_4">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -433,10 +422,10 @@
                 android:layout_height="wrap_content"
                 android:text="Score"
                 android:textSize="25sp"
+                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/rollbtn"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintEnd_toStartOf="@+id/rollbtn"/>
 
             <Button
                 android:id="@+id/rollbtn"
@@ -444,10 +433,10 @@
                 android:layout_height="wrap_content"
                 android:text="Roll"
                 android:textSize="25sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/scorebtn"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>

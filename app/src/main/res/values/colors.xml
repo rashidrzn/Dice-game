@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#C00A48</color>
+    <color name="green">#00FF00</color>
+    <color name="purple_200">#FF0000</color>
     <color name="purple_500">#181818</color>
     <color name="purple_700">#FF000000</color>
     <color name="teal_200">#FF03DAC5</color>
@@ -8,5 +9,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="btnbackground">#181818</color>
+    <color name="red">#FF0000</color>
 
 </resources>
