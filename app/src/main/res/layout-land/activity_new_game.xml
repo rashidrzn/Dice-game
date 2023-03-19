@@ -10,8 +10,9 @@
         android:id="@+id/L_1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="20dp"
+        android:background="#C8C1C1"
         android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintBottom_toTopOf="@id/L_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -128,7 +129,7 @@
                         android:id="@+id/text_5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="User : "
+                        android:text="Human : "
                         android:textSize="25sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toStartOf="@+id/UScore"
@@ -247,7 +248,6 @@
         </LinearLayout>
 
 
-
     </LinearLayout>
 
 
@@ -255,6 +255,7 @@
         android:id="@+id/L_3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#C8C1C1"
         app:layout_constraintBottom_toTopOf="@+id/L_4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -269,55 +270,64 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="H"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/L_3"></TextView>
+
                 <ImageView
                     android:id="@+id/i_1"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_2"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/i_2"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_3"
                     app:layout_constraintStart_toEndOf="@+id/i_1"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/i_3"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_4"
                     app:layout_constraintStart_toEndOf="@+id/i_2"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/i_4"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_5"
                     app:layout_constraintStart_toEndOf="@+id/i_3"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/i_5"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/i_4"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -331,6 +341,7 @@
         android:id="@+id/L_4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#C8C1C1"
         app:layout_constraintBottom_toTopOf="@+id/L_5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintEnd_toStartOf="parent"
@@ -345,55 +356,64 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="C"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/L_4"></TextView>
+
                 <ImageView
                     android:id="@+id/i_6"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_7"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/i_7"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_8"
                     app:layout_constraintStart_toEndOf="@+id/i_6"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/i_8"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_9"
                     app:layout_constraintStart_toEndOf="@+id/i_7"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/i_9"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/i_10"
                     app:layout_constraintStart_toEndOf="@+id/i_8"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageView
                     android:id="@+id/i_10"
                     android:layout_width="50sp"
                     android:layout_height="50sp"
+                    android:src="@drawable/die_face_1"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/i_9"
-                    app:layout_constraintTop_toTopOf="parent"
-                    android:src="@drawable/die_face_1"/>
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -406,10 +426,11 @@
         android:id="@+id/L_5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/L_4"
+        android:background="#C8C1C1"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/L_4">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -422,10 +443,10 @@
                 android:layout_height="wrap_content"
                 android:text="Score"
                 android:textSize="25sp"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/rollbtn"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/rollbtn"/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/rollbtn"
@@ -433,10 +454,10 @@
                 android:layout_height="wrap_content"
                 android:text="Roll"
                 android:textSize="25sp"
-                app:layout_constraintStart_toEndOf="@+id/scorebtn"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"/>
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/scorebtn"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </LinearLayout>

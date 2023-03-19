@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back"
+
+    android:background="#C8C1C1"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -20,31 +21,31 @@
 
         <Button
             android:id="@+id/newgamebtn"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
-            android:textColor="@color/white"
+            android:layout_width="327dp"
+            android:layout_height="16dp"
             android:layout_margin="15dp"
             android:layout_weight="1"
+            android:background="@color/cardview_dark_background"
             android:capitalize="characters"
             android:padding="25dp"
             android:text="@string/new_game"
+            android:textColor="@color/white"
             android:textSize="20sp"
             android:visibility="visible"
-            android:background="@color/cardview_dark_background"
 
             tools:visibility="visible" />
 
         <Button
             android:id="@+id/aboutbtn"
-            android:layout_width="match_parent"
-            android:layout_height="2dp"
+            android:layout_width="327dp"
+            android:layout_height="16dp"
             android:layout_margin="15dp"
             android:layout_weight="1"
-            android:textColor="@color/white"
             android:background="@color/cardview_dark_background"
             android:capitalize="characters"
             android:padding="25dp"
             android:text="@string/about"
+            android:textColor="@color/white"
             android:textCursorDrawable="@drawable/back"
             android:textSize="20sp" />
     </LinearLayout>

@@ -29,16 +29,18 @@ class TargetActivity : AppCompatActivity() {
 
 
         target.setOnClickListener {
-            var targett = targetText.text.toString()
 
-            targettt = targett.toInt()
-            if (targett.isNotBlank() && targett.toInt() > 0) {
+            val targetStr = targetText.text.toString()
+            if (targetStr.isNotEmpty() && Integer.parseInt(targetText.text.toString()) >0  ) {
+                var targett = targetText.text.toString()
+                targettt = targetText.text.toString().toInt()
+
                 var int = Intent(this, NewGame::class.java)
                 int.putExtra("userWin", userWin)
                 int.putExtra("computerWin", comWin)
                 int.putExtra("input", targett.toInt())
                 startActivity(int)
-            } else {
+            } else{
                 val message = "Please set a target in the above text field"
                 val duration = Toast.LENGTH_SHORT
                 val toast = Toast.makeText(this, message, duration)

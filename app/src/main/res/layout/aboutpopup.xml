@@ -2,17 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="@color/teal_200"
-    android:layout_height="wrap_content">
+    android:background="#736868">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:padding="10dp"
-        app:cardCornerRadius="15dp">
+        app:cardBackgroundColor="#C8C1C1"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,9 +32,9 @@
                     android:layout_width="40dp"
                     android:layout_height="40dp"
                     android:layout_marginEnd="16dp"
-                    android:padding="10dp"
                     android:foregroundGravity="center"
-                    android:src="@drawable/die_face_1"
+                    android:padding="10dp"
+                    android:src="@drawable/close"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -43,8 +44,8 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="132dp"
-                android:src="@drawable/user"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                android:src="@drawable/user">
 
             </ImageView>
 
@@ -53,8 +54,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="Rashid Rizan"
-                android:textColor="@color/black"
                 android:textAlignment="center"
+                android:textColor="@color/black"
                 android:textSize="25sp">
 
             </TextView>
@@ -63,9 +64,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
                 android:padding="10dp"
                 android:text="@string/stuid_20210402"
+                android:textColor="@color/black"
                 android:textSize="25sp">
 
             </TextView>
@@ -78,8 +79,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
-                    android:textAlignment="center"
                     android:text="@string/hello"
+                    android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="18sp">
 
